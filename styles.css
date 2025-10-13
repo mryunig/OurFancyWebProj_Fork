@@ -1,4 +1,4 @@
-/* VisionStyle Prototyp - MockUp-konforme Version */
+/* VisionStyle Prototyp - Experimentelle Änderungen */
 
 * {
     margin: 0;
@@ -7,23 +7,24 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;  /* Schrift geändert */
+    line-height: 1.8;  /* Line-height erhöht */
+    color: #222;  /* Farbe dunkler */
+    background: linear-gradient(180deg, #f0f0f0 0%, #d0d0d0 100%);  /* Hintergrund mit Gradient */
 }
 
 header {
-    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+    background: #1a252f;  /* Dunklere Farbe */
     color: white;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 2rem 2rem;  /* Mehr Padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* Stärkerer Schatten */
 }
 
 header h1 {
     display: inline-block;
     margin-right: 2rem;
-    font-size: 1.8rem;
+    font-size: 2.2rem;  /* Größere Schrift */
+    font-weight: 900;  /* Fetter */
 }
 
 nav {
@@ -32,33 +33,35 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #ffd700;  /* Goldene Farbe - wirkt unpassend */
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin: 0 0.25rem;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+    background: #ff6b6b;  /* Rote Hover-Farbe */
+    border-radius: 8px;
 }
 
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);  /* Rötlicher Gradient */
     color: white;
-    padding: 5rem 2rem;
+    padding: 6rem 2rem;
     text-align: center;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
 }
 
 .hero p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     opacity: 0.9;
 }
 
@@ -74,33 +77,36 @@ nav a:hover {
 .feature-card {
     flex: 1;
     background: #ffffff;
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 3rem;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
-    border: 2px solid #e0e0e0;
+    border: 3px solid #ff6b6b;  /* Rote Border */
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: translateY(-10px) rotate(2deg);  /* Rotation beim Hover */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
 }
 
 .feature-card h3 {
-    color: #667eea;
+    color: #ff6b6b;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 .feature-card p {
-    color: #666;
+    color: #444;
+    font-style: italic;
 }
 
 footer {
-    background: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+    background: #1a252f;
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 2rem;
     margin-top: 3rem;
+    font-size: 1.1rem;
 }
